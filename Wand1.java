@@ -7,17 +7,14 @@
  */
 public class Wand1 extends Wand
 {
-    private int attack = 100;
-    private int defense = 75;
-    private int stamina = 50;
 
     public Wand1()
     {
-       super(0,0,0);
+       super(100,75,50);
     }
     
-    public Wand1(int attack, int defense, int stamina)
-    {
-        super(attack, defense, stamina);
-    }
+//     public Wand1(int attack, int defense, int stamina)
+//     {
+//         super(attack, defense, stamina);
+//     }
 }

@@ -13,8 +13,11 @@ public class Wizard
     private Wand w;
     private House h;
     
-    public Wizard()
+    public Wizard(String house, String wand)
     {
+        //if house.equals(Gryffindor) h = new Gryffindor();
+        //by the end, all variables above have been initialized
+        //if(wand.equals
         
     }
     
