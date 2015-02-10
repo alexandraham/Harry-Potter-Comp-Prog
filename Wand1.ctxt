@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Wand1()
+comment1.params=attack\ defense\ stamina
+comment1.target=Wand1(int,\ int,\ int)
+numComments=2
