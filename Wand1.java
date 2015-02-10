@@ -12,9 +12,5 @@ public class Wand1 extends Wand
     {
        super(100,75,50);
     }
-    
-//     public Wand1(int attack, int defense, int stamina)
-//     {
-//         super(attack, defense, stamina);
-//     }
+   
 }

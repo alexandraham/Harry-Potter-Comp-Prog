@@ -7,5 +7,8 @@
  */
 public class Wand3 extends Wand
 {
-    
+    public Wand3()
+    {
+       super(50,100,75);
+    }
 }

@@ -7,9 +7,9 @@
  */
 public class Wizard 
 {
-    private int attack;
-    private int defense;
-    private int stamina;
+    private static int attack;
+    private static int defense;
+    private static int stamina;
     private Wand w;
     private House h;
     
@@ -21,20 +21,34 @@ public class Wizard
         
     }
     
-    public int getAttack()
+    static void setAttack(int x)
+    {
+        attack = attack + x;
+    }
+    
+    static void setDefense(int x)
+    {
+        defense = defense + x;
+    }
+    
+    static void setStamina(int x)
+    {
+        stamina = stamina + x;
+    }
+    
+    static int getAttack()
     {
         return attack;
     }
     
-    public int getDefense()
+    static int getDefense()
     {
         return defense;
     }
     
-    public int getStamina()
+    static int getStamina()
     {
         return stamina;
     }
-   
 
 }
