@@ -12,6 +12,7 @@ public class GameLogic
     Wizard w;
     int level;
     String househ;
+    String wandtype;
 
     /**
      * Constructor for objects of class GameLogic
@@ -20,10 +21,10 @@ public class GameLogic
     {
         //place code here for intial choices: house, wand, etc...
         //store responses in variables,h and w (strings)
-        w = new Wizard(househ,w);
+        w = new Wizard(househ,wandtype);
         level = 1;
     }
-    
+
     public int level()
     {
         return level;
@@ -31,24 +32,24 @@ public class GameLogic
 
     public void backgroundStory()
     {
-        
-         new Health();
-    System.out.println("Hello, Welcome to Hogwarts! What is your name?");
-    Scanner read = new Scanner(System.in);
-    String name = read.nextLine();
-    System.out.println("Welcome to Hogwarts " + name+ ". You will now be sorted into your Hogwarts Houses.\nThe options are Gryffindor, Hufflepuff, Ravenclaw, and Slytherin");
-    try {Thread.sleep(1500);
-    } catch(Exception e) {}
-    System.out.println("The Sorting Hat is thinking...");
-    try {Thread.sleep(3000);
-    } catch(Exception e) {}
-    Random gen = new Random();
-    int house = gen.nextInt(4);
-    
-    if(house==0)
-    {
-         System.out.println("Congratulations! You have been sorted into GRYFFINDOR! The house of the brave.");
-         househ = "Gryffindor";
+
+        // new Health();
+        System.out.println("Hello, Welcome to Hogwarts! What is your name?");
+        Scanner read = new Scanner(System.in);
+        String name = read.nextLine();
+        System.out.println("Welcome to Hogwarts " + name+ ". You will now be sorted into your Hogwarts Houses.\nThe options are Gryffindor, Hufflepuff, Ravenclaw, and Slytherin");
+        try {Thread.sleep(1500);
+        } catch(Exception e) {}
+        System.out.println("The Sorting Hat is thinking...");
+        try {Thread.sleep(3000);
+        } catch(Exception e) {}
+        Random gen = new Random();
+        int house = gen.nextInt(4);
+
+        if(house==0)
+        {
+            System.out.println("Congratulations! You have been sorted into GRYFFINDOR! The house of the brave.");
+            househ = "Gryffindor";
         }
         else if(house==1)
         {
@@ -62,20 +63,42 @@ public class GameLogic
         }
         else
         {
-             System.out.println("Congratulations! You have been sorted into HUFFLEPUFF! The house of the loyal.");
-             househ= "Hufflepuff";
+            System.out.println("Congratulations! You have been sorted into HUFFLEPUFF! The house of the loyal.");
+            househ= "Hufflepuff";
         }
-       System.out.println("
-}//welcome to...  
+        
+        System.out.println("Now you will be given a wand!");
+        try {Thread.sleep(1000);
+        } catch(Exception e) {}
+        System.out.println("The wand is choosing the wizard...");
+        try {Thread.sleep(2000);
+        } catch(Exception e) {}
+        int wand = gen.nextInt(3);
+        if(wand==0) 
+        {
+            System.out.println("Your wand has a core of unicorn hair. It excels at charms!");
+            wandtype="charms";
+        }
+         if(wand==1) 
+        {
+            System.out.println("Your wand has a core of a phoenix feather. It excels at defense!");
+            wandtype="defense";
+        }
+         if(wand==2) 
+        {
+            System.out.println("Your wand has a core dragon heart string. It helps preserve your stamina!");
+            wandtype="stamina";
+        }
+    }//welcome to...  
     public void battle(Obstacles o)
     {
-        
+
         //if battle is lost, w.setStamina(
     }
-    
+
     public void runObstacle()
     {
-        
+
     }
 }
 

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GameLogic()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ GameLogic\r\n
+comment1.params=
+comment1.target=int\ level()
+comment2.params=
+comment2.target=void\ backgroundStory()
+comment3.params=o
+comment3.target=void\ battle(Obstacles)
+comment4.params=
+comment4.target=void\ runObstacle()
+numComments=5
