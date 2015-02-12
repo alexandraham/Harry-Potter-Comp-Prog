@@ -15,7 +15,15 @@ public class Wizard
     
     public Wizard(String house, String wand)
     {
-        //if house.equals(Gryffindor) h = new Gryffindor();
+        if (house.equals("Gryffindor")) h = new Gryffindor();
+        if (house.equals("Slytherin")) h = new Slytherin();
+        if (house.equals("Ravenclaw")) h = new Ravenclaw();
+        if (house.equals("Hufflepuff")) h = new Hufflepuff();
+        
+        if(wand.equals("Wand1")) w = new Wand1();
+        if(wand.equals("Wand2")) w = new Wand2();
+        if(wand.equals("Wand3")) w = new Wand3();
+        
         //by the end, all variables above have been initialized
         //if(wand.equals
         
