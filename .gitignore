@@ -2,6 +2,9 @@
 ## Eclipse
 #################
 
+*.class
+*.bluej
+
 *.pydevproject
 .project
 .metadata
