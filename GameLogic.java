@@ -11,6 +11,7 @@ public class GameLogic
 {
     Wizard w;
     int level;
+    String househ;
 
     /**
      * Constructor for objects of class GameLogic
@@ -19,7 +20,7 @@ public class GameLogic
     {
         //place code here for intial choices: house, wand, etc...
         //store responses in variables,h and w (strings)
-        w = new Wizard(h,w);
+        w = new Wizard(househ,w);
         level = 1;
     }
     
@@ -43,22 +44,28 @@ public class GameLogic
     } catch(Exception e) {}
     Random gen = new Random();
     int house = gen.nextInt(4);
+    
     if(house==0)
     {
          System.out.println("Congratulations! You have been sorted into GRYFFINDOR! The house of the brave.");
+         househ = "Gryffindor";
         }
         else if(house==1)
         {
             System.out.println("Congratulations! You have been sorted into SLYTHERIN! The house of the cunning.");
+            househ= "Slytherin";
         }
         else if(house==2)
         { 
             System.out.println("Congratulations! You have been sorted into RAVENCLAW! The house of the wise."); 
+            househ= "Ravenclaw";
         }
         else
         {
              System.out.println("Congratulations! You have been sorted into HUFFLEPUFF! The house of the loyal.");
+             househ= "Hufflepuff";
         }
+       System.out.println("
 }//welcome to...  
     public void battle(Obstacles o)
     {
