@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class House
+public abstract class House
 {
     private int attack;
     private int stamina;
