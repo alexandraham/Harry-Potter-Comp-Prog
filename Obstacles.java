@@ -7,6 +7,8 @@
  */
 public interface Obstacles 
 {
+
    void increaseHealth();
    void decreaseHealth();
+
 }

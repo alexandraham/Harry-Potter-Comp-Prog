@@ -5,29 +5,17 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Fluffy extends Obstacles
+public class Fluffy implements Obstacles
 {
     // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Fluffy
-     */
+    private int power;
+    
     public Fluffy()
     {
-        // initialise instance variables
-        x = 0;
+        power = 10;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public void increaseHealth()
     {
-        // put your code here
-        return x + y;
+        
     }
 }
