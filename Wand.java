@@ -13,7 +13,7 @@ public abstract class Wand
     private int stamina;
     private int defense;
     
-    public Wand(int attack, int stamina, int defense)
+    public Wand(int attack, int defense, int stamina)
     {
         this.attack = attack;
         this.defense = defense;
@@ -23,6 +23,5 @@ public abstract class Wand
         Wizard.setDefense(defense);
         Wizard.setStamina(stamina);
     }
-    
     
 }

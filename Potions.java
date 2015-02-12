@@ -5,7 +5,11 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Potions extends Obstacles
+<<<<<<< HEAD
+public class Potions 
+=======
+public class Potions implements Obstacles 
+>>>>>>> FETCH_HEAD
 {
     // instance variables - replace the example below with your own
     private int x;
