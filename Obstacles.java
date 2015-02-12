@@ -7,8 +7,8 @@
  */
 public interface Obstacles 
 {
-
-   void increaseHealth(Wizard w);
-   void decreaseHealth(Wizard w);
-
+void opt1Response(Wizard w);
+void opt2Response(Wizard w);
+void opt3Response(Wizard w);
+void opt4Response(Wizard w);
 }

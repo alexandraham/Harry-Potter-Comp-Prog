@@ -14,7 +14,7 @@ public class Fluffy implements Obstacles
     {
         power = 10;
     }
-    public void increaseHealth()
+    public void opt1Response(Wizard w)
     {
         
     }
