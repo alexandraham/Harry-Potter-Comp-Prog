@@ -23,11 +23,8 @@ public class Wizard
         if(wand.equals("Wand1")) w = new Wand1();
         if(wand.equals("Wand2")) w = new Wand2();
         if(wand.equals("Wand3")) w = new Wand3();
-        
-        //by the end, all variables above have been initialized
-        //if(wand.equals
-        
     }
+    
     
     static void setAttack(int x)
     {
