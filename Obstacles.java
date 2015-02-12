@@ -8,7 +8,7 @@
 public interface Obstacles 
 {
 
-   void increaseHealth();
-   void decreaseHealth();
+   void increaseHealth(Wizard w);
+   void decreaseHealth(Wizard w);
 
 }

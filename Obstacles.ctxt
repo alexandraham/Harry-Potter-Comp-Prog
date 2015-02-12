@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=
-comment0.target=void\ increaseHealth()
-comment1.params=
-comment1.target=void\ decreaseHealth()
+comment0.params=w
+comment0.target=void\ increaseHealth(Wizard)
+comment1.params=w
+comment1.target=void\ decreaseHealth(Wizard)
 numComments=2
