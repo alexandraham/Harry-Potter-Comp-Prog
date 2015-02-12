@@ -1,4 +1,6 @@
 
+import java.util.Scanner;
+import java.util.*;
 /**
  * Write a description of class GameLogic here.
  * 
@@ -28,9 +30,36 @@ public class GameLogic
 
     public void backgroundStory()
     {
-        //welcome to...
-    }
-    
+        
+         new Health();
+    System.out.println("Hello, Welcome to Hogwarts! What is your name?");
+    Scanner read = new Scanner(System.in);
+    String name = read.nextLine();
+    System.out.println("Welcome to Hogwarts " + name+ ". You will now be sorted into your Hogwarts Houses.\nThe options are Gryffindor, Hufflepuff, Ravenclaw, and Slytherin");
+    try {Thread.sleep(1500);
+    } catch(Exception e) {}
+    System.out.println("The Sorting Hat is thinking...");
+    try {Thread.sleep(3000);
+    } catch(Exception e) {}
+    Random gen = new Random();
+    int house = gen.nextInt(4);
+    if(house==0)
+    {
+         System.out.println("Congratulations! You have been sorted into GRYFFINDOR! The house of the brave.");
+        }
+        else if(house==1)
+        {
+            System.out.println("Congratulations! You have been sorted into SLYTHERIN! The house of the cunning.");
+        }
+        else if(house==2)
+        { 
+            System.out.println("Congratulations! You have been sorted into RAVENCLAW! The house of the wise."); 
+        }
+        else
+        {
+             System.out.println("Congratulations! You have been sorted into HUFFLEPUFF! The house of the loyal.");
+        }
+}//welcome to...  
     public void battle(Obstacles o)
     {
         
@@ -42,3 +71,4 @@ public class GameLogic
         
     }
 }
+

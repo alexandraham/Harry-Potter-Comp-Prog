@@ -1,5 +1,6 @@
 
-/**
+
+/*/**
  * Write a description of class Starter here.
  * 
  * @author (your name) 
@@ -9,6 +10,7 @@ public class Starter
 {
     public static void main(String[] args)
     {
+        
         GameLogic g = new GameLogic();
         g.backgroundStory();
         
