@@ -1,5 +1,14 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Voldemort()
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Voldemort\n
-numComments=1
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=w
+comment2.target=void\ opt1Response(Wizard)
+comment3.params=w
+comment3.target=void\ opt2Response(Wizard)
+comment4.params=w
+comment4.target=void\ opt3Response(Wizard)
+comment5.params=w
+comment5.target=void\ opt4Response(Wizard)
+numComments=6

@@ -1,8 +1,14 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Fluffy()
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Fluffy\n
-comment1.params=y
-comment1.target=int\ sampleMethod(int)
-comment1.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\ \n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \n
-numComments=2
+comment1.params=w
+comment1.target=void\ opt1Response(Wizard)
+comment2.params=w
+comment2.target=void\ opt2Response(Wizard)
+comment3.params=w
+comment3.target=void\ opt3Response(Wizard)
+comment4.params=w
+comment4.target=void\ opt4Response(Wizard)
+comment5.params=
+comment5.target=int\ getPower()
+numComments=6

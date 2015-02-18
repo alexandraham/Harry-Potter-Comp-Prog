@@ -11,4 +11,5 @@ void opt1Response(Wizard w);
 void opt2Response(Wizard w);
 void opt3Response(Wizard w);
 void opt4Response(Wizard w);
+
 }

@@ -16,6 +16,28 @@ public class Fluffy implements Obstacles
     }
     public void opt1Response(Wizard w)
     {
+        w.setAttack(w.getAttack() +1);
+        w.setDefense(w.getDefense() +1);
+        w.setStamina(w.getStamina()+1);
+    }
+    public void opt2Response(Wizard w)
+    {
+        w.setAttack(w.getAttack()-1);
         
     }
+    public void opt3Response(Wizard w)
+    {
+        w.setStamina(w.getStamina()-1);
+        
+    }
+    public void opt4Response(Wizard w)
+    {
+        w.setDefense(w.getDefense()-1);
+        
+    }
+    public int getPower()
+    {
+        return power;
+    }
 }
+
