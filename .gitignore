@@ -3,7 +3,8 @@
 #################
 
 *.class
-*.bluej
+*.ctxt
+package.bluej
 
 *.pydevproject
 .project
