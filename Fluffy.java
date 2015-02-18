@@ -14,6 +14,10 @@ public class Fluffy implements Obstacles
     {
         power = 10;
     }
+    public static void main(String[]args)
+    {
+        System.out.println("You have encountered Voldemort! What would you like to do?\n1. Stupefy\n2. Confundus\n3. Expelliarmus");
+    }
     public void opt1Response(Wizard w)
     {
         w.setAttack(w.getAttack() +1);
