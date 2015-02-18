@@ -12,6 +12,18 @@ public class Goblins implements Obstacles
     {
         power = 30;
     }
+    public static void main()
+    {
+        System.out.println("You have encountered a Goblin! What would you like to do? \n1.");
+         switch(65) 
+         {
+      case 50: 
+      {
+          
+          break;
+        }
+    }
+    }
 
     
 }

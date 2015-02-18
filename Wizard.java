@@ -10,6 +10,7 @@ public class Wizard
     private static int attack;
     private static int defense;
     private static int stamina;
+    private static int money;
     private Wand w;
     private House h;
     

@@ -10,12 +10,14 @@ public abstract class House
     private int attack;
     private int stamina;
     private int defense;
+    private int money;
     
-    public House(int attack, int defense, int stamina)
+    public House(int attack, int defense, int stamina, int money)
     {
         this.attack = attack;
         this.defense = defense;
         this.stamina = stamina;
+        this.money = money;
         
         Wizard.setAttack(attack);
         Wizard.setDefense(defense);

@@ -89,7 +89,9 @@ public class GameLogic
             System.out.println("Your wand has a core dragon heart string. It helps preserve your stamina!");
             wandtype="stamina";
         }
-    }//welcome to...  
+    }
+    
+    //welcome to...  
     public void battle(Obstacles o)
     {
 
