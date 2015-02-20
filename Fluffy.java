@@ -16,7 +16,7 @@ public class Fluffy implements Obstacles
     }
     public static void main(String[]args)
     {
-        System.out.println("You have encountered Voldemort! What would you like to do?\n1. Stupefy\n2. Confundus\n3. Expelliarmus");
+        System.out.println("You have encountered Fluffy! What would you like to do?\n1. Buy a flute\n2. attack\n3. Run past it\n4. Use defense method");
     }
     public void opt1Response(Wizard w)
     {

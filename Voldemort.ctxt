@@ -11,4 +11,6 @@ comment4.params=w
 comment4.target=void\ opt3Response(Wizard)
 comment5.params=w
 comment5.target=void\ opt4Response(Wizard)
-numComments=6
+comment6.params=
+comment6.target=int\ getPower()
+numComments=7

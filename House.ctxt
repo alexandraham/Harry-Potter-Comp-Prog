@@ -1,4 +1,4 @@
 #BlueJ class context
-comment0.params=attack\ defense\ stamina
-comment0.target=House(int,\ int,\ int)
+comment0.params=attack\ defense\ stamina\ money
+comment0.target=House(int,\ int,\ int,\ int)
 numComments=1
