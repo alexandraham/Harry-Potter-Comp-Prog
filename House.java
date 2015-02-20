@@ -10,9 +10,8 @@ public abstract class House
     private int attack;
     private int stamina;
     private int defense;
-    private int money;
     
-    public House(int attack, int defense, int stamina, int money)
+    public House(int attack, int defense, int stamina)
     {
         this.attack = attack;
         this.defense = defense;

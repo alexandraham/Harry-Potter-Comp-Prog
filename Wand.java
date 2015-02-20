@@ -18,10 +18,9 @@ public abstract class Wand
         this.attack = attack;
         this.defense = defense;
         this.stamina = stamina;
-        
-        Wizard.setAttack(attack);
-        Wizard.setDefense(defense);
-        Wizard.setStamina(stamina);
+
     }
+    
+    public int getAttack()
     
 }

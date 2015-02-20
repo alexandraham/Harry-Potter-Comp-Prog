@@ -9,6 +9,6 @@ public class Slytherin extends House
 {
     public Slytherin()
     {
-       super(200,150,100,25);
+       super(200,150,100);
     }
 }

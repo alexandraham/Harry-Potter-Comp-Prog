@@ -9,6 +9,6 @@ public class Ravenclaw extends House
 {
     public Ravenclaw()
     {
-       super(150,200,100,25);
+       super(150,200,100);
     }
 }

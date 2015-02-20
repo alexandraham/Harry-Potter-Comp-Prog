@@ -9,6 +9,6 @@ public class Hufflepuff extends House
 {
     public Hufflepuff()
     {
-       super(100,150,200,25);
+       super(100,150,200);
     }
 }

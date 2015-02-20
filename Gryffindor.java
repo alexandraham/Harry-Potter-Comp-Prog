@@ -9,6 +9,6 @@ public class Gryffindor extends House
 {
     public Gryffindor()
     {
-       super(150,100,200,25);
+       super(150,100,200);
     }
 }

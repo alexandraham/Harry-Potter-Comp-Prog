@@ -7,14 +7,14 @@
  */
 public class Wizard 
 {
-    private static int attack;
-    private static int defense;
-    private static int stamina;
-    private static int money;
+    private int attack;
+    private int defense;
+    private int stamina;
+    private int money;
     private Wand w;
     private House h;
     
-    public Wizard(String house, String wand)
+    public Wizard(String house, String wand, int coin)
     {
         if (house.equals("Gryffindor")) h = new Gryffindor();
         if (house.equals("Slytherin")) h = new Slytherin();
@@ -24,35 +24,38 @@ public class Wizard
         if(wand.equals("Wand1")) w = new Wand1();
         if(wand.equals("Wand2")) w = new Wand2();
         if(wand.equals("Wand3")) w = new Wand3();
+        
+        coin = 25;
     }
     
     
-    static void setAttack(int x)
+    public void setAttack(int x)
     {
+        attack += w.getAttack();
         attack = attack + x;
     }
     
-    static void setDefense(int x)
+    public void setDefense(int x)
     {
         defense = defense + x;
     }
     
-    static void setStamina(int x)
+    public void setStamina(int x)
     {
         stamina = stamina + x;
     }
     
-    static int getAttack()
+    public int getAttack()
     {
         return attack;
     }
     
-    static int getDefense()
+    public int getDefense()
     {
         return defense;
     }
     
-    static int getStamina()
+    public int getStamina()
     {
         return stamina;
     }
