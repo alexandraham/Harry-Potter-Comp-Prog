@@ -14,7 +14,7 @@ public class Wizard
     private Wand w;
     private House h;
 
-    public Wizard(String house, String wand, int coin)
+    public Wizard(String house, String wand)
     {
         if (house.equals("Gryffindor")) h = new Gryffindor();
         else if (house.equals("Slytherin")) h = new Slytherin();
@@ -25,7 +25,7 @@ public class Wizard
         else if(wand.equals("defense")) w = new Wand2();
         else if(wand.equals("stamina")) w = new Wand3();
 
-        coin = 25;
+        money = 25;
 
         attack = attack + h.getHouseAttack() + w.getWandAttack();
         defense = defense + h.getHouseDefense() + w.getWandDefense();
