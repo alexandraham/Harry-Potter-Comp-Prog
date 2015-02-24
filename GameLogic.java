@@ -29,7 +29,7 @@ public class GameLogic
        //healthnum.setFont(new Font("Arial", Font.PLAIN,12));
        //health.add(healthnum, BorderLayout.CENTER);
        //healthnum.setText("100");
-       health.setVisible(true); 
+       stats.setVisible(true); 
     }
     
     public static void setStats(int a, int b)
