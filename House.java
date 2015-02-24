@@ -16,11 +16,21 @@ public abstract class House
         this.attack = attack;
         this.defense = defense;
         this.stamina = stamina;
-        this.money = money;
-        
-        Wizard.setAttack(attack);
-        Wizard.setDefense(defense);
-        Wizard.setStamina(stamina);
+       
     }
     
+    public int getHouseAttack()
+    {
+        return attack;
+    }
+    
+    public int getHouseDefense()
+    {
+        return defense;
+    }
+    
+    public int getHouseStamina()
+    {
+        return stamina;
+    }
 }

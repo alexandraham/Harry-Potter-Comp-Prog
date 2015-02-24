@@ -21,6 +21,19 @@ public abstract class Wand
 
     }
     
-    public int getAttack()
+    public int getWandAttack()
+    {
+        return attack;
+    }
+    
+    public int getWandDefense()
+    {
+        return defense;
+    }
+    
+    public int getWandStamina()
+    {
+        return stamina;
+    }
     
 }

@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=house\ wand
-comment0.target=Wizard(java.lang.String,\ java.lang.String)
+comment0.params=house\ wand\ coin
+comment0.target=Wizard(java.lang.String,\ java.lang.String,\ int)
 comment1.params=x
 comment1.target=void\ setAttack(int)
 comment2.params=x
@@ -13,4 +13,8 @@ comment5.params=
 comment5.target=int\ getDefense()
 comment6.params=
 comment6.target=int\ getStamina()
-numComments=7
+comment7.params=x
+comment7.target=void\ setMoney(int)
+comment8.params=
+comment8.target=int\ getMoney()
+numComments=9
