@@ -1,6 +1,8 @@
 
 import java.util.Scanner;
 import java.util.*;
+import java.awt.*;
+import javax.swing.*;
 /**
  * Write a description of class GameLogic here.
  * 
@@ -13,6 +15,27 @@ public class GameLogic
     int level;
     String househ;
     String wandtype;
+    //JFrame s;
+    static JLabel stats; 
+    public static void main()
+    {
+       JFrame statistics = new JFrame();
+       stats =new JLabel();
+       statistics.setLayout(new BorderLayout());
+       statistics.add(stats, BorderLayout.CENTER);
+       stats.setSize(400,100);
+       stats.setFont(new Font("Arial", Font.BOLD, 25));
+       //stats.setText("<html>HEALTH:               100<br>STAMINA:           100</html>");
+       //healthnum.setFont(new Font("Arial", Font.PLAIN,12));
+       //health.add(healthnum, BorderLayout.CENTER);
+       //healthnum.setText("100");
+       health.setVisible(true); 
+    }
+    
+    public static void setStats(int a, int b)
+    {
+        stats.setText("<html>HEALTH:               "+ a +"<br>STAMINA:           "+ b + "</html>");
+    }
 
     /**
      * Constructor for objects of class GameLogic
