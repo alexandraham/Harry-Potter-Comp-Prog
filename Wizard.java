@@ -71,4 +71,5 @@ public class Wizard
     {
         return money;
     }
+
 }

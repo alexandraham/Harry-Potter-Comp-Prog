@@ -12,10 +12,7 @@ public class DevilsSnare implements Obstacles
     {
         power = 20;
     }
-    public static void main(String[]args)
-    {
-        System.out.println("You have encountered the Devil's Snare! What would you like to do?\n1. Panic\n2. calm\n3. Sunlight spell\n4. Slash with a knife");
-    }
+    
     public void opt1Response(Wizard w)
     {
         w.setAttack(w.getAttack()-2);
@@ -34,7 +31,7 @@ public class DevilsSnare implements Obstacles
     public void opt4Response(Wizard w)
     {
         w.setDefense(w.getDefense()-1);
-        
+        w.setMoney(w.getMoney()-5);
     }
     public int getPower()
     {

@@ -1,4 +1,14 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Goblins()
-numComments=1
+comment1.params=w
+comment1.target=void\ opt1Response(Wizard)
+comment2.params=w
+comment2.target=void\ opt2Response(Wizard)
+comment3.params=w
+comment3.target=void\ opt3Response(Wizard)
+comment4.params=w
+comment4.target=void\ opt4Response(Wizard)
+comment5.params=
+comment5.target=int\ getPower()
+numComments=6

@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-
+import java.util.Scanner;
 public class Voldemort implements Obstacles
 
 {
@@ -17,10 +17,7 @@ public class Voldemort implements Obstacles
     {
         power = 50;
     }
-    public static void main(String[]args)
-    {
-        System.out.println("You have encountered Voldemort! What would you like to do?\n1. Stupefy\n2. Confundus\n3. Expelliarmus\n4. Slap him");
-    }
+    
     public void opt1Response(Wizard w)
     {
         w.setStamina(w.getStamina()-1);

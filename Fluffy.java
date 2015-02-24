@@ -14,15 +14,13 @@ public class Fluffy implements Obstacles
     {
         power = 10;
     }
-    public static void main(String[]args)
-    {
-        System.out.println("You have encountered Fluffy! What would you like to do?\n1. Buy a flute\n2. attack\n3. Run past it\n4. Use defense method");
-    }
+    
     public void opt1Response(Wizard w)
     {
         w.setAttack(w.getAttack() +1);
         w.setDefense(w.getDefense() +1);
         w.setStamina(w.getStamina()+1);
+        w.setMoney(w.getMoney()-10);
     }
     public void opt2Response(Wizard w)
     {

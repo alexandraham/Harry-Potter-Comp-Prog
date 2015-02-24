@@ -13,7 +13,7 @@ public class Starter
         
         GameLogic g = new GameLogic();
         g.backgroundStory();
-        
-        while(g.level()<=6) g.runObstacle();
+        g.battle();
+        //while(g.level()<=6) g.runObstacle();
     }
 }

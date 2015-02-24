@@ -21,10 +21,7 @@ public class Troll implements Obstacles
         // initialise instance variables
         power = 40;
     }
-    public static void main(String[]args)
-    {
-        System.out.println("You have encountered a Troll! What would you like to do?\n1. Perform an attack spell\n2. Run around\n3. Stupefy\n4. Buy a sleeping draught");
-    }
+    
     public void opt1Response(Wizard w)
     {
         w.setAttack(w.getAttack() +1);
@@ -45,7 +42,7 @@ public class Troll implements Obstacles
     }
     public void opt4Response(Wizard w)
     {
-        //w.setMoney(w.getMoney()-3);
+        w.setMoney(w.getMoney()-3);
         w.setDefense(w.getDefense() +1);
     }
     public int getPower()

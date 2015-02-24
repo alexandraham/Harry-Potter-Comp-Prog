@@ -12,18 +12,29 @@ public class Goblins implements Obstacles
     {
         power = 30;
     }
-    public static void main()
+      
+    public void opt1Response(Wizard w)
     {
-        System.out.println("You have encountered a Goblin! What would you like to do? \n1.");
-         switch(65) 
-         {
-      case 50: 
-      {
-          
-          break;
-        }
+        w.setAttack(w.getAttack()-2);
+        w.setMoney(w.getMoney()+5);
     }
+    public void opt2Response(Wizard w)
+    {
+        w.setDefense(w.getDefense()-2);
+        
     }
-
+    public void opt3Response(Wizard w)
+    {
+        w.setMoney(w.getMoney()-5);
+    }
+    public void opt4Response(Wizard w)
+    {
+        w.setDefense(w.getDefense()-1);
+        
+    }
+    public int getPower()
+    {
+        return power;
+    }
     
 }
