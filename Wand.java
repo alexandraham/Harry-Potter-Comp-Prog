@@ -8,14 +8,14 @@
 
 public abstract class Wand
  
-{   // instance variables - replace the example below with your own
+{   // instance variables
     private int attack;
     private int stamina;
     private int defense;
     
     public Wand(int attack, int defense, int stamina)
     {
-        this.attack = attack;
+        this.attack = attack;//instance variable attack is assigned to parameter variable attack
         this.defense = defense;
         this.stamina = stamina;
 
@@ -23,7 +23,7 @@ public abstract class Wand
     
     public int getWandAttack()
     {
-        return attack;
+        return attack;//returns attack value from wand
     }
     
     public int getWandDefense()

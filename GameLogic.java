@@ -19,32 +19,32 @@ public class GameLogic
     static JLabel stats; 
     public static void main()
     {
-        JFrame statistics = new JFrame();
-        stats =new JLabel();
-        statistics.setLayout(new BorderLayout());
-        statistics.add(stats, BorderLayout.CENTER);
-        stats.setSize(400,100);
-        stats.setFont(new Font("Arial", Font.BOLD, 25));
-        //stats.setText("<html>HEALTH:               100<br>STAMINA:           100</html>");
-        //healthnum.setFont(new Font("Arial", Font.PLAIN,12));
-        //health.add(healthnum, BorderLayout.CENTER);
-        //healthnum.setText("100");
-        stats.setVisible(true); 
+        
     }
 
-    public static void setStats(int a, int b)
+    public void setStats()
     {
-        stats.setText("<html>HEALTH:               "+ a +"<br>STAMINA:           "+ b + "</html>");
+        stats.setText("<html>ATTACK:             "+ w.getAttack() +"<br>DEFENSE:           "+ w.getDefense() + "<br>STAMINA:        " + w.getStamina() + "<br>MONEY:          " + w.getMoney() + "</html>");
     }
+
 
     /**
      * Constructor for objects of class GameLogic
      */
     public GameLogic()
     {
-        //place code here for intial choices: house, wand, etc...
-        //store responses in variables,h and w (strings)
-        w = new Wizard(househ,wandtype);
+        JFrame statistics = new JFrame();
+        stats = new JLabel();
+        statistics.setLayout(new BorderLayout());
+        statistics.add(stats, BorderLayout.CENTER);
+        statistics.setSize(400,100);
+        stats.setFont(new Font("Arial", Font.BOLD, 25));
+        //stats.setText("<html>HEALTH:               100<br>STAMINA:           100</html>");
+        //healthnum.setFont(new Font("Arial", Font.PLAIN,12));
+        //health.add(healthnum, BorderLayout.CENTER);
+        //healthnum.setText("100");
+        statistics.setVisible(true); 
+        //setStats();
         level = 1;
     }
 
@@ -112,12 +112,14 @@ public class GameLogic
             System.out.println("Your wand has a core dragon heart string. It helps preserve your stamina!");
             wandtype="stamina";
         }
+        w = new Wizard(househ,wandtype);
+        setStats();
     }
 
     //welcome to...  
     public void battle()
     {
-        
+
         while(w.getAttack()>0&&w.getStamina()>0&&w.getDefense()>0)
         { Fluffy f = new Fluffy();
             System.out.println("You have encountered Fluffy! What would you like to do?\n1. Buy a flute\n2. attack\n3. Run past it\n4. Use defense method");
@@ -170,8 +172,8 @@ public class GameLogic
                 case 3:f.opt3Response(w);
                 case 4:f.opt4Response(w);
             }
+        }
     }
-}
 
 }
 

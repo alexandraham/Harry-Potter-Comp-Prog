@@ -10,7 +10,7 @@ public class Wand1 extends Wand
 
     public Wand1()
     {
-       super(100,75,50);
+       super(100,75,50);//initializes parameter variables to construct a wand to values 50,100, and 75
     }
    
 }
